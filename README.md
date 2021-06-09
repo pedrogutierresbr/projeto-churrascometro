@@ -3,7 +3,7 @@
 
 ##   About the project
  
-Project made with the intention of first contact with the Javascript Language where the usefulness is to assist in the purchase of food for a barbecue.
+Project made as a first contact with the Javascript Language where the utility is to assist in the purchase of the correct amount of food for a barbecue.
 
 To see the **web version**, click here: https://churrascometrolegal.netlify.app/
 
