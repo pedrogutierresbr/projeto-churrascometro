@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: no-repeat center/100% url(../assets/capa_1.jpg);
+    background-size: cover;
+}
+
+.tips{
+    width: 830px;
+    height: 880px;
+    padding: 40px 0;
+    margin-right: 60px;
+    position: relative;
+}
+
+.tips h1{
+    display: flex;
+    flex-direction: column;
+    font-size: 64px;
+    color: #f7f7f7;
+}
+
+#slider{
+    width: 650px;
+    position: relative;
+}
+
+.card{
+    position: absolute;
+    width: 680px;
+    height: 290px;
+    margin: 60px auto;
+    padding: 30px;
+
+    border: 0px solid black;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f7f7f7;
+
+    opacity: 0;
+    transition: opacity 800ms;
+}
+
+#slider div.selected{
+    opacity: 1;
+}
+
+.card h3{
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.card p{
+    font-size: 20px;
+    margin-bottom: 15px;
+    color:white;
+}
+
+
+.info{
+    width: 410px;
+    height: 740px;
+    padding: 20px;
+    position: relative;
+    top: -30px;
+
+    background-color: #f7f7f7;
+    border-radius: 30px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+.info h2{
+    text-transform: uppercase;
+    margin: 30px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.info .sub-title{
+    width: 290px;
+    margin: 0 auto 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.info .inputs{
+    width: 290px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info .inputs input{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+.info .inputs button{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 15px 0;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #f7f7f7;
+    border: none;
+    border-radius: 33px;
+    transition: all 300ms ease;
+}
+
+.info .inputs button:hover{
+    cursor: pointer;
+    color: black;
+    background-color: #feab5a;
+}
+
+.results{
+    width: 290px;
+    margin: 20px auto 20px;
+    text-align: left;
+}
+
+.results p{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.results .extra-info{
+    margin-top: 40px;
+}
+
+.results .extra-info p{
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+footer{
+    color: #fff;
+    position: relative;
+}
+
+.position{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding: 0 0 20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.position p{
+    font-size: 14px;
+}  
+
+.socials{
+    display: flex;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.socials i{
+    margin: 0 20px;
+    font-size: 1.4rem;
+    transition: all 400ms ease;
+}
+
+.socials i:hover{
+    color: #e8c534;
+    cursor: pointer;
+}
+
+
+/* Responsive behavior */
+
+/* Laptop 1024*/
+@media (max-width: 1024px){
+
+    .tips{
+        width: 630px;
+        height: 100vh;
+        padding: 40px 20px;
+        margin-right: 0px;
+    }
+    
+    .tips h1{
+        font-size: 48px;
+    }
+
+    #slider{
+        width: 630px;
+    }
+
+    .card{
+        width: 550px;
+        height: 290px;
+        margin: 60px auto;
+        padding: 30px;
+    }
+    
+    .card h3{
+        font-size: 30px;
+    }
+    
+    .card p{
+        font-size: 18px;
+    }
+
+    .info{
+        width: 350px;    
+        height: 720px;
+        top: -40px;
+    }
+
+    .info h2{
+        font-size: 30px;
+    }
+ 
+    .info .sub-title{
+        font-size: 18px;
+    }
+
+    .results p{
+        font-size: 18px;
+    }  
+}
+
+/* Tablets 768*/
+@media (max-width: 768px){
+    .container{
+        padding: 20px;
+    }
+
+    .tips{
+        width: 400px;
+        height: 100vh;
+        padding: 40px 20px;
+        margin-right: 0px;
+    }
+
+    .tips h1{
+        font-size: 36px;
+    }
+
+    #slider{
+        width: 328px;
+    }
+
+    .card{
+        width: 320px;
+        height: 340px;
+        padding: 30px;
+    }
+
+    .card h3{
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .card p{
+        font-size: 16px;
+    }
+
+    .info{
+        width: 330px;
+    }
+
+    .info h2{
+        font-size: px;
+    }
+ 
+    .info .sub-title{
+        width: 250px;
+        font-size: 16px;
+    }
+}
+
+/* Cellphones 425 */
+@media (max-width: 425px){
+
+    body{
+        background: black;
+    }
+
+    .container{
+        display: block;
+        background: inherit;
+    }
+    
+    .tips{
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 40px 0;
+    }
+    
+    .tips h1{
+        font-size: 48px;
+        text-align: center;
+        margin: 40px 0;
+    }
+    
+    .card{
+        display: none;
+    }
+
+    .info{
+        display: block;
+        width: 100%;
+        top: 0px;
+    }
+
+    footer{
+        display: block;
+    }
+
+    .position{
+        position: relative;
+        width: 100%;
+        height: 70px;
+        padding: 20px;
+        bottom: -70px;
+        
+    }
+}

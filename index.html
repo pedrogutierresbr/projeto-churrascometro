@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Churrascômetro</title>
+</head>
+
+<body">
+    <main>
+        <div class="container">
+            <div class="tips">
+                <h1>Olá, <br>Churrasqueiro(a)!</h1>
+                <div id="slider">
+                    <div class="card selected">
+                        <h3>Ponto da carne: Selada</h3>
+                        <p>A carne, quando selada foi cozida por fora e apenas levemente aquecida por dentro,
+                            permanecendo praticamente inalterada ou crua em seu interior. Esse é ponto mais macio da carne.</p>
+                        <p>A temperatura pode variar de 50ºC a 55ºC e deve permanecer no fogo por 3 minutos.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Ponto da carne: Mal Passada</h3>
+                        <p>Nesse ponto a carne é bem parecida com a selada, porém sua estrutura já foi um pouco
+                            modificada. Sua superfície fica mais grelhada do que a selada,porém seu interior permanece cru.</p>
+                        <p>A temperatura pode variar de 55ºC a 60ºC e deve ficar no fogo por no máximo 4 minutos.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Ponto da carne: Ao Ponto para Mal</h3>
+                        <p>Essa carne é ainda mais grelhada por fora, suas bordas apresentam um aspecto bem mais cozido,
+                            porém seu interior continua vermelho e úmido. Sua textura já é mais resistente ao toque.</p>
+                        <p>A temperatura não passa dos 68ºC e deve permanecer no fogo de 5 a 7 minutos.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Ponto da carne: Ao Ponto</h3>
+                        <p>A carne ao ponto é grelhada por fora e apenas rosada por dentro. Nesse ponto a carne já está 
+                            firme por fora, mas continua macia por dentro.</p>
+                        <p>A temperatura pode chegar no máximo a 70ºC e deve ficar no fogo por no máximo 8 minutos.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Ponto da carne: Ao Ponto para Bom</h3>
+                        <p>Nesse estágio, a carne é muito bem grelhada por fora e por dentro, restando poucos sucos e
+                            mantendo levemente o rosa em seu interior, pois o tom marrom já começa a tomar conta.</p>
+                        <p>A temperatura pode chegar no máximo a 73ºC e deve ficar no fogo por no máximo 9 minutos.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Ponto da carne: Bem passada</h3>
+                        <p>Nesse ponto a carne está completamente grelhada tanto por fora quanto por dentro. Sua
+                            coloração é completamente marrom e sua textura é bem firme e rígida.</p>
+                        <p>A temperatura chega no máximo a 75ºC e deve ficar no fogo por 10 minutos ou mais, dependendo
+                            da espessura do corte.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info">
+                <h2>churrascômetro</h2>
+                <p class="sub-title">Saiba a quantidade perfeita para arrasar no churrasco em casa com a galera!</p>
+                <div class="inputs">
+                    <input type="number" name="adultos" id="adultos" placeholder="Adultos" min="0">
+                    <input type="number" name="criancas" id="criancas" placeholder="Crianças" min="0">
+                    <input type="number" name="duracao" id="duracao" placeholder="Duração (h)" min="0">
+                    <button>Calcular</button>
+                </div>
+
+                <div class="results">
+                    <div class="extra-info">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="position">
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/pedro-gutierres-5638018b/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/pedrogutierresbr" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/pegutierres/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+            <p>&copy;2021 - Desenvolvido por Pedro Gutierres</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/70252d9f4b.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    </body>
+</html>
