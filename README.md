@@ -1,5 +1,6 @@
 # Churrascômetro
-
+![GitHub repo size](https://img.shields.io/github/repo-size/pedrogutierresbr/projeto-churrascometro)
+![GitHub](https://img.shields.io/github/license/pedrogutierresbr/projeto-churrascometro)
 
 ##   About the project
  
